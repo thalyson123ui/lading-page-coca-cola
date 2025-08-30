@@ -1,2 +1,275 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F28E13;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+
+header .navegation  li{
+    list-style: none;
+}
+
+header .navegation li a{
+    display: inline-block;
+    color: #BF2604;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.content .text h2{
+    color: #260101;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
+.content .text h2 span{
+    font-size: 3.5em;
+    color: #BF3604;
+}
+
+.content .text p{
+    color: #F20505;
+}
+
+.content .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #590202;
+    color: #0D0D0D;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.content .text a:hover{
+    transform: translateY(-10px);
+}
+
+.icons{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons li{
+    list-style: none;
+}
+
+.icons li a{
+    display: inline-block;
+    margin-left: 45px;
+    background: #590202;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:  0.3s ease-in-out;
+}
+
+.icons li a:hover{
+    background: #F2884B;
+    transform: translateY(-10px);
+}
+
+.icons li a img{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+.boxImg{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+.boxImg img{
+    width: 200px;
+}
+.boxImg .img1{
+    transform: rotate(-15deg)
+}
+.boxImg .img2{
+    transform: rotate(5deg)
+}
+.boxImg .img3{
+    transform: rotate(15deg)
+}
+.boxImg .img4{
+    transform: rotate(-15deg)
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    section {
+        padding: 60px 30px;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    header {
+        padding: 30px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content .text {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .boxImg {
+        position: static;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    section {
+        padding: 30px 10px;
+    }
+
+    header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        max-width: 120px;
+    }
+
+    header .navegation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .navegation li a {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .content .text h2 {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    .content .text h2 span {
+        font-size: 2.5em;
+    }
+
+    .content .text a {
+        margin-top: 30px;
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+
+    .icons {
+        left: 10px;
+        bottom: 20px;
+    }
+
+    .icons li a {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .boxImg img {
+        width: 120px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    section {
+        padding: 10px 2px;
+    }
+
+    header {
+        padding: 10px 2px;
+    }
+
+    .content .text h2 {
+        font-size: 1.2em;
+    }
+
+    .content .text h2 span {
+        font-size: 1.5em;
+    }
+
+    .boxImg img {
+        width: 80px;
+    }
+}
+/* ...existing code... */
